@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XI-SEVENTURE | SMAN 1 GUNUNG SINDUR</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#09090b] text-zinc-100 selection:bg-amber-500 selection:text-black min-h-screen relative overflow-x-hidden">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full z-40 bg-[#09090b]/80 backdrop-blur-md border-b border-zinc-800/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-serif-custom text-lg sm:text-xl font-bold tracking-wider text-zinc-100 flex items-center gap-2 shrink-0">
+        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+        XI-SEVENTURE
+      </a>
+      <div class="flex items-center space-x-3 sm:space-x-6 text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-zinc-400">
+        <a href="#beranda" class="hover:text-amber-400 transition-colors">Beranda</a>
+        <a href="#keluarga" class="hover:text-amber-400 transition-colors">Keluarga</a>
+        <a href="#potret" class="hover:text-amber-400 transition-colors">Kenangan</a>
+        <a href="#jadwal" class="hover:text-amber-400 transition-colors">Jadwal</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="beranda" class="relative pt-32 pb-24 px-6 flex flex-col items-center text-center overflow-hidden border-b border-zinc-800/50">
+    <!-- Overlay Foto Sampul Lokal -->
+    <div 
+      class="absolute inset-0 opacity-35 bg-cover bg-center" 
+      style="background-image: url('./images/hero-bg.jpg');"
+    ></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#09090b] via-[#09090b]/80 to-transparent"></div>
+    
+    <!-- Ambient Gold Glow -->
+    <div class="ambient-glow top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto">
+      <span class="inline-block px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-[11px] font-semibold uppercase tracking-[0.2em] mb-6">
+        XI-SEVENTURE • SMAN 1 GUNUNG SINDUR
+      </span>
+      <h1 class="font-serif-custom text-5xl md:text-7xl font-bold text-zinc-100 tracking-tight mb-4">
+        XI-SEVENTURE
+      </h1>
+      <p class="font-serif-custom italic text-zinc-400 text-lg md:text-xl mb-10">
+        "Bukan sekadar kelas, tapi keluarga tempat cerita tumbuh."
+      </p>
+
+      <!-- STATS BOX -->
+      <div class="inline-grid grid-cols-3 gap-6 md:gap-12 bg-zinc-900/90 border border-zinc-800/80 p-5 md:p-6 rounded-2xl backdrop-blur-md">
+        <div>
+          <div class="text-2xl md:text-3xl font-bold text-amber-400 font-serif-custom">44</div>
+          <div class="text-[10px] font-bold tracking-widest text-zinc-400 uppercase mt-1">SISWA</div>
+        </div>
+        <div class="border-x border-zinc-800 px-4">
+          <div class="text-2xl md:text-3xl font-bold text-amber-400 font-serif-custom">100+</div>
+          <div class="text-[10px] font-bold tracking-widest text-zinc-400 uppercase mt-1">FOTO</div>
+        </div>
+        <div>
+          <div class="text-2xl md:text-3xl font-bold text-amber-400 font-serif-custom">∞</div>
+          <div class="text-[10px] font-bold tracking-widest text-zinc-400 uppercase mt-1">KENANGAN</div>
+        </div>
+      </div>
+
+      <!-- ACTION BUTTONS (INSTAGRAM & SHARE) -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="https://www.instagram.com/xi_seventure_/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs transition-all shadow-lg shadow-amber-500/10">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @xi_seventure_
+        </a>
+        <button onclick="shareWebsite()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-zinc-900/90 hover:bg-zinc-800 text-zinc-200 border border-zinc-800 hover:border-amber-500/40 font-semibold text-xs transition-all">
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Bagikan Web
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-6 py-16 space-y-24 relative">
+
+    <!-- WALI KELAS & STRUKTUR -->
+    <section class="space-y-12 relative reveal">
+      <div class="ambient-glow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50"></div>
+
+      <div class="text-center relative z-10">
+        <h2 class="font-serif-custom text-3xl md:text-4xl font-bold text-zinc-100">
+          Struktur <em class="font-serif-custom italic font-normal text-amber-400">Organisasi</em>
+        </h2>
+        <p class="text-xs font-semibold text-zinc-400 tracking-widest uppercase mt-2">WALI KELAS & PENGURUS XI-SEVENTURE</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+        <!-- Wali Kelas Card -->
+        <div class="md:col-span-3 bg-zinc-900/60 border border-zinc-800/80 hover:border-amber-500/40 transition-colors p-6 rounded-2xl flex flex-col items-center text-center backdrop-blur-sm">
+          <div class="w-24 h-24 mb-4 rounded-full overflow-hidden border-2 border-amber-400/60 bg-zinc-800 shadow-lg shadow-amber-500/10">
+            <img src="https://ui-avatars.com/api/?name=Irvan+Maulana+Putra&background=18181b&color=fbbf24&bold=true" alt="Irvan Maulana Putra S.Pd" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-serif-custom text-xl font-bold text-zinc-100">Irvan Maulana Putra S.Pd</h3>
+          <span class="text-xs font-semibold text-amber-400 uppercase tracking-widest mt-1">WALI KELAS</span>
+        </div>
+
+        <!-- Pengurus Kelas -->
+        <div class="bg-zinc-900/40 border border-zinc-800/60 hover:border-amber-500/30 transition-colors p-5 rounded-xl text-center backdrop-blur-sm">
+          <span class="text-[10px] font-bold tracking-widest text-amber-400 uppercase block mb-1">KETUA KELAS</span>
+          <h4 class="font-bold text-zinc-200">Muhammad Azril Agustian</h4>
+        </div>
+        <div class="bg-zinc-900/40 border border-zinc-800/60 hover:border-amber-500/30 transition-colors p-5 rounded-xl text-center backdrop-blur-sm">
+          <span class="text-[10px] font-bold tracking-widest text-amber-400 uppercase block mb-1">WAKIL KETUA</span>
+          <h4 class="font-bold text-zinc-200">Arinka Maulida Azkiya</h4>
+        </div>
+        <div class="bg-zinc-900/40 border border-zinc-800/60 hover:border-amber-500/30 transition-colors p-5 rounded-xl text-center backdrop-blur-sm">
+          <span class="text-[10px] font-bold tracking-widest text-amber-400 uppercase block mb-1">SEKRETARIS & BENDAHARA</span>
+          <h4 class="text-xs font-semibold text-zinc-300">Nadia Fitri & Adhio Bimantoro</h4>
+          <h4 class="text-xs font-semibold text-zinc-300 mt-1">Bilqist Annisa & Friences Azzahra</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- KELUARGA KAMI (GRID 44 SISWA + ACAK KELOMPOK) -->
+    <section id="keluarga" class="space-y-8 reveal">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-zinc-800 pb-6">
+        <div>
+          <h2 class="font-serif-custom text-3xl md:text-4xl font-bold text-zinc-100">
+            Keluarga <em class="font-serif-custom italic font-normal text-amber-400">Kami</em>
+          </h2>
+          <p class="text-xs font-semibold text-zinc-400 tracking-widest uppercase mt-1">DAFTAR ANGGOTA (44 SISWA)</p>
+        </div>
+
+        <!-- Baris Kontrol: Tombol Acak Kelompok & Kolom Cari -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
+          <button 
+            onclick="openSpinModal()" 
+            class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500/15 hover:bg-amber-500 text-amber-400 hover:text-black border border-amber-500/40 font-bold text-xs transition-all shrink-0"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            Acak Kelompok
+          </button>
+
+          <input 
+            type="text" 
+            id="search-input" 
+            onkeyup="filterSiswa()" 
+            placeholder="Cari nama anggota..." 
+            class="bg-zinc-900 border border-zinc-800 text-xs px-4 py-2.5 rounded-xl text-zinc-200 focus:outline-none focus:border-amber-400 w-full sm:w-60"
+          >
+        </div>
+      </div>
+
+      <div id="siswa-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        
+        <!-- Siswa 1 -->
+        <div onclick="openModal('./images/siswa/siswa1.jpg', 'Achmad Fauzan')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa1.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Achmad+Fauzan&background=18181b&color=fbbf24&bold=true'" alt="Achmad Fauzan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">1</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Achmad Fauzan</span>
+        </div>
+
+        <!-- Siswa 2 -->
+        <div onclick="openModal('./images/siswa/siswa2.jpg', 'Adhio Bimantoro')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa2.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Adhio+Bimantoro&background=18181b&color=fbbf24&bold=true'" alt="Adhio Bimantoro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">2</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Adhio Bimantoro</span>
+        </div>
+
+        <!-- Siswa 3 -->
+        <div onclick="openModal('./images/siswa/siswa3.jpg', 'Alief Fathurrahman')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa3.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Alief+Fathurrahman&background=18181b&color=fbbf24&bold=true'" alt="Alief Fathurrahman" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">3</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Alief Fathurrahman</span>
+        </div>
+
+        <!-- Siswa 4 -->
+        <div onclick="openModal('./images/siswa/siswa4.jpg', 'Alif Zahran Ramadhan')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa4.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Alif+Zahran+Ramadhan&background=18181b&color=fbbf24&bold=true'" alt="Alif Zahran Ramadhan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">4</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Alif Zahran Ramadhan</span>
+        </div>
+
+        <!-- Siswa 5 -->
+        <div onclick="openModal('./images/siswa/siswa5.jpg', 'Alifia Nurul Aqilah')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa5.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Alifia+Nurul+Aqilah&background=18181b&color=fbbf24&bold=true'" alt="Alifia Nurul Aqilah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">5</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Alifia Nurul Aqilah</span>
+        </div>
+
+        <!-- Siswa 6 -->
+        <div onclick="openModal('./images/siswa/siswa6.jpg', 'Annisa Larasati Irwadi')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa6.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Annisa+Larasati+Irwadi&background=18181b&color=fbbf24&bold=true'" alt="Annisa Larasati Irwadi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">6</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Annisa Larasati Irwadi</span>
+        </div>
+
+        <!-- Siswa 7 -->
+        <div onclick="openModal('./images/siswa/siswa7.jpg', 'Arinka Maulida Azkiya')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa7.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Arinka+Maulida+Azkiya&background=18181b&color=fbbf24&bold=true'" alt="Arinka Maulida Azkiya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">7</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Arinka Maulida Azkiya</span>
+        </div>
+
+        <!-- Siswa 8 -->
+        <div onclick="openModal('./images/siswa/siswa8.jpg', 'Arizka Maulida Azkiya')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa8.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Arizka+Maulida+Azkiya&background=18181b&color=fbbf24&bold=true'" alt="Arizka Maulida Azkiya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">8</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Arizka Maulida Azkiya</span>
+        </div>
+
+        <!-- Siswa 9 -->
+        <div onclick="openModal('./images/siswa/siswa9.jpg', 'Bilqist Annisa Zahra')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa9.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Bilqist+Annisa+Zahra&background=18181b&color=fbbf24&bold=true'" alt="Bilqist Annisa Zahra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">9</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Bilqist Annisa Zahra</span>
+        </div>
+
+        <!-- Siswa 10 -->
+        <div onclick="openModal('./images/siswa/siswa10.jpg', 'Chairum Anindya Putri')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa10.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Chairum+Anindya+Putri&background=18181b&color=fbbf24&bold=true'" alt="Chairum Anindya Putri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">10</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Chairum Anindya Putri</span>
+        </div>
+
+        <!-- Siswa 11 -->
+        <div onclick="openModal('./images/siswa/siswa11.jpg', 'Chalista Chandra Aurelia Pradnya Paramitha')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa11.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Chalista+Chandra+Aurelia+Pradnya+Paramitha&background=18181b&color=fbbf24&bold=true'" alt="Chalista Chandra Aurelia Pradnya Paramitha" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">11</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Chalista Chandra Aurelia Pradnya Paramitha</span>
+        </div>
+
+        <!-- Siswa 12 -->
+        <div onclick="openModal('./images/siswa/siswa12.jpg', 'David Jessan Bayu Tanaya')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa12.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=David+Jessan+Bayu+Tanaya&background=18181b&color=fbbf24&bold=true'" alt="David Jessan Bayu Tanaya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">12</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">David Jessan Bayu Tanaya</span>
+        </div>
+
+        <!-- Siswa 13 -->
+        <div onclick="openModal('./images/siswa/siswa13.jpg', 'Debby Rahmawati')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa13.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Debby+Rahmawati&background=18181b&color=fbbf24&bold=true'" alt="Debby Rahmawati" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">13</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Debby Rahmawati</span>
+        </div>
+
+        <!-- Siswa 14 -->
+        <div onclick="openModal('./images/siswa/siswa14.jpg', 'Fara Natasya Putri')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa14.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Fara+Natasya+Putri&background=18181b&color=fbbf24&bold=true'" alt="Fara Natasya Putri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">14</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Fara Natasya Putri</span>
+        </div>
+
+        <!-- Siswa 15 -->
+        <div onclick="openModal('./images/siswa/siswa15.jpg', 'Farel Liandi')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa15.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Farel+Liandi&background=18181b&color=fbbf24&bold=true'" alt="Farel Liandi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">15</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Farel Liandi</span>
+        </div>
+
+        <!-- Siswa 16 -->
+        <div onclick="openModal('./images/siswa/siswa16.jpg', 'Fitrah Nanda Seftiansyah')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa16.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Fitrah+Nanda+Seftiansyah&background=18181b&color=fbbf24&bold=true'" alt="Fitrah Nanda Seftiansyah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">16</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Fitrah Nanda Seftiansyah</span>
+        </div>
+
+        <!-- Siswa 17 -->
+        <div onclick="openModal('./images/siswa/siswa17.jpg', 'Friences Azzahra Ramadani Gusfi Marlis')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa17.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Friences+Azzahra+Ramadani+Gusfi+Marlis&background=18181b&color=fbbf24&bold=true'" alt="Friences Azzahra Ramadani Gusfi Marlis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">17</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Friences Azzahra Ramadani Gusfi Marlis</span>
+        </div>
+
+        <!-- Siswa 18 -->
+        <div onclick="openModal('./images/siswa/siswa18.jpg', 'Habibah Nurul Hadi')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa18.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Habibah+Nurul+Hadi&background=18181b&color=fbbf24&bold=true'" alt="Habibah Nurul Hadi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">18</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Habibah Nurul Hadi</span>
+        </div>
+
+        <!-- Siswa 19 -->
+        <div onclick="openModal('./images/siswa/siswa19.jpg', 'Kirana Widyara')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa19.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Kirana+Widyara&background=18181b&color=fbbf24&bold=true'" alt="Kirana Widyara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">19</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Kirana Widyara</span>
+        </div>
+
+        <!-- Siswa 20 -->
+        <div onclick="openModal('./images/siswa/siswa20.jpg', 'Laiqa Adiva Djaya')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa20.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Laiqa+Adiva+Djaya&background=18181b&color=fbbf24&bold=true'" alt="Laiqa Adiva Djaya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">20</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Laiqa Adiva Djaya</span>
+        </div>
+
+        <!-- Siswa 21 -->
+        <div onclick="openModal('./images/siswa/siswa21.jpg', 'Lintang Sindhunata')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa21.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Lintang+Sindhunata&background=18181b&color=fbbf24&bold=true'" alt="Lintang Sindhunata" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">21</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Lintang Sindhunata</span>
+        </div>
+
+        <!-- Siswa 22 -->
+        <div onclick="openModal('./images/siswa/siswa22.jpg', 'Muhamad Arizki')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa22.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Muhamad+Arizki&background=18181b&color=fbbf24&bold=true'" alt="Muhamad Arizki" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">22</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Muhamad Arizki</span>
+        </div>
+
+        <!-- Siswa 23 -->
+        <div onclick="openModal('./images/siswa/siswa23.jpg', 'Muhamad Desta')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa23.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Muhamad+Desta&background=18181b&color=fbbf24&bold=true'" alt="Muhamad Desta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">23</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Muhamad Desta</span>
+        </div>
+
+        <!-- Siswa 24 -->
+        <div onclick="openModal('./images/siswa/siswa24.jpg', 'Muhamad Fadly Faizuddin')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa24.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Muhamad+Fadly+Faizuddin&background=18181b&color=fbbf24&bold=true'" alt="Muhamad Fadly Faizuddin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">24</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Muhamad Fadly Faizuddin</span>
+        </div>
+
+        <!-- Siswa 25 -->
+        <div onclick="openModal('./images/siswa/siswa25.jpg', 'Muhamad Fauzhan Abdulah')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa25.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Muhamad+Fauzhan+Abdulah&background=18181b&color=fbbf24&bold=true'" alt="Muhamad Fauzhan Abdulah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">25</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Muhamad Fauzhan Abdulah</span>
+        </div>
+
+        <!-- Siswa 26 -->
+        <div onclick="openModal('./images/siswa/siswa26.jpg', 'Muhammad Azril Agustian')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa26.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Muhammad+Azril+Agustian&background=18181b&color=fbbf24&bold=true'" alt="Muhammad Azril Agustian" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">26</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Muhammad Azril Agustian</span>
+        </div>
+
+        <!-- Siswa 27 -->
+        <div onclick="openModal('./images/siswa/siswa27.jpg', 'Muhammad Rafa Ar-Ramadhan')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa27.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Muhammad+Rafa+Ar-Ramadhan&background=18181b&color=fbbf24&bold=true'" alt="Muhammad Rafa Ar-Ramadhan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">27</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Muhammad Rafa Ar-Ramadhan</span>
+        </div>
+
+        <!-- Siswa 28 -->
+        <div onclick="openModal('./images/siswa/siswa28.jpg', 'Muhammad Rasya Pramana Putra')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa28.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Muhammad+Rasya+Pramana+Putra&background=18181b&color=fbbf24&bold=true'" alt="Muhammad Rasya Pramana Putra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">28</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Muhammad Rasya Pramana Putra</span>
+        </div>
+
+        <!-- Siswa 29 -->
+        <div onclick="openModal('./images/siswa/siswa29.jpg', 'Nadia Fitri Nurtobia')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa29.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Nadia+Fitri+Nurtobia&background=18181b&color=fbbf24&bold=true'" alt="Nadia Fitri Nurtobia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">29</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Nadia Fitri Nurtobia</span>
+        </div>
+
+        <!-- Siswa 30 -->
+        <div onclick="openModal('./images/siswa/siswa30.jpg', 'Nazriel Fatah')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa30.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Nazriel+Fatah&background=18181b&color=fbbf24&bold=true'" alt="Nazriel Fatah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">30</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Nazriel Fatah</span>
+        </div>
+
+        <!-- Siswa 31 -->
+        <div onclick="openModal('./images/siswa/siswa31.jpg', 'Nikky Awlyah Ardiansyah')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa31.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Nikky+Awlyah+Ardiansyah&background=18181b&color=fbbf24&bold=true'" alt="Nikky Awlyah Ardiansyah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">31</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Nikky Awlyah Ardiansyah</span>
+        </div>
+
+        <!-- Siswa 32 -->
+        <div onclick="openModal('./images/siswa/siswa32.jpg', 'Putri Meiko Kenza')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa32.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Putri+Meiko+Kenza&background=18181b&color=fbbf24&bold=true'" alt="Putri Meiko Kenza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">32</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Putri Meiko Kenza</span>
+        </div>
+
+        <!-- Siswa 33 -->
+        <div onclick="openModal('./images/siswa/siswa33.jpg', 'Queenita Azizah')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa33.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Queenita+Azizah&background=18181b&color=fbbf24&bold=true'" alt="Queenita Azizah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">33</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Queenita Azizah</span>
+        </div>
+
+        <!-- Siswa 34 -->
+        <div onclick="openModal('./images/siswa/siswa34.jpg', 'Rabbany Akbar')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa34.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Rabbany+Akbar&background=18181b&color=fbbf24&bold=true'" alt="Rabbany Akbar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">34</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Rabbany Akbar</span>
+        </div>
+
+        <!-- Siswa 35 -->
+        <div onclick="openModal('./images/siswa/siswa35.jpg', 'Rafa Mulya Aldawa')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa35.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Rafa+Mulya+Aldawa&background=18181b&color=fbbf24&bold=true'" alt="Rafa Mulya Aldawa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">35</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Rafa Mulya Aldawa</span>
+        </div>
+
+        <!-- Siswa 36 -->
+        <div onclick="openModal('./images/siswa/siswa36.jpg', 'Raffa Maulana')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa36.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Raffa+Maulana&background=18181b&color=fbbf24&bold=true'" alt="Raffa Maulana" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">36</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Raffa Maulana</span>
+        </div>
+
+        <!-- Siswa 37 -->
+        <div onclick="openModal('./images/siswa/siswa37.jpg', 'Raffa Octora Widya Thamma')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa37.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Raffa+Octora+Widya+Thamma&background=18181b&color=fbbf24&bold=true'" alt="Raffa Octora Widya Thamma" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">37</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Raffa Octora Widya Thamma</span>
+        </div>
+
+        <!-- Siswa 38 -->
+        <div onclick="openModal('./images/siswa/siswa38.jpg', 'Reinhart Azriel Faiz')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa38.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Reinhart+Azriel+Faiz&background=18181b&color=fbbf24&bold=true'" alt="Reinhart Azriel Faiz" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">38</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Reinhart Azriel Faiz</span>
+        </div>
+
+        <!-- Siswa 39 -->
+        <div onclick="openModal('./images/siswa/siswa39.jpg', 'Risma Wati')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa39.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Risma+Wati&background=18181b&color=fbbf24&bold=true'" alt="Risma Wati" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">39</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Risma Wati</span>
+        </div>
+
+        <!-- Siswa 40 -->
+        <div onclick="openModal('./images/siswa/siswa40.jpg', 'Shakyra Al Fira')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa40.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Shakyra+Al+Fira&background=18181b&color=fbbf24&bold=true'" alt="Shakyra Al Fira" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">40</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Shakyra Al Fira</span>
+        </div>
+
+        <!-- Siswa 41 -->
+        <div onclick="openModal('./images/siswa/siswa41.jpg', 'Siti Juairoh')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa41.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Siti+Juairoh&background=18181b&color=fbbf24&bold=true'" alt="Siti Juairoh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">41</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Siti Juairoh</span>
+        </div>
+
+        <!-- Siswa 42 -->
+        <div onclick="openModal('./images/siswa/siswa42.jpg', 'Syaipa Pidi Hamidah')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa42.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Syaipa+Pidi+Hamidah&background=18181b&color=fbbf24&bold=true'" alt="Syaipa Pidi Hamidah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">42</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Syaipa Pidi Hamidah</span>
+        </div>
+
+        <!-- Siswa 43 -->
+        <div onclick="openModal('./images/siswa/siswa43.jpg', 'Vannesa Maharani Bilqis')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa43.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Vannesa+Maharani+Bilqis&background=18181b&color=fbbf24&bold=true'" alt="Vannesa Maharani Bilqis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">43</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Vannesa Maharani Bilqis</span>
+        </div>
+
+        <!-- Siswa 44 -->
+        <div onclick="openModal('./images/siswa/siswa44.jpg', 'Wahyu Bima Sakti')" class="group bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-2xl flex flex-col items-center text-center cursor-pointer hover:border-amber-500/50 transition-all">
+          <div class="w-full aspect-[3/4] mb-3 rounded-xl overflow-hidden bg-zinc-800 relative">
+            <img src="./images/siswa/siswa44.jpg" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Wahyu+Bima+Sakti&background=18181b&color=fbbf24&bold=true'" alt="Wahyu Bima Sakti" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-1.5 left-1.5 bg-black/70 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded-md backdrop-blur-sm">44</span>
+          </div>
+          <span class="text-xs font-bold text-zinc-200 line-clamp-1 group-hover:text-amber-400 transition-colors">Wahyu Bima Sakti</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- POTRET BERSAMA (GALERI FOTO) -->
+    <section id="potret" class="space-y-8 reveal">
+      <div>
+        <h2 class="font-serif-custom text-3xl md:text-4xl font-bold text-zinc-100">
+          Potret <em class="font-serif-custom italic font-normal text-amber-400">Bersama</em>
+        </h2>
+        <p class="text-xs font-semibold text-zinc-400 tracking-widest uppercase mt-1">KLIK FOTO UNTUK TAMPILAN FULL</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+        <!-- Kenangan 1 -->
+        <div onclick="openModal('./images/galeri/kenangan1.jpg', 'Kenangan 1')" class="group relative aspect-[4/3] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer">
+          <img src="./images/galeri/kenangan1.jpg" alt="Kenangan 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+            <span class="text-xs font-semibold text-zinc-200">Kenangan 1</span>
+          </div>
+        </div>
+
+        <!-- Kenangan 2 -->
+        <div onclick="openModal('./images/galeri/kenangan2.jpg', 'Kenangan 2')" class="group relative aspect-[4/3] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer">
+          <img src="./images/galeri/kenangan2.jpg" alt="Kenangan 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+            <span class="text-xs font-semibold text-zinc-200">Kenangan 2</span>
+          </div>
+        </div>
+
+        <!-- Kenangan 3 -->
+        <div onclick="openModal('./images/galeri/kenangan3.jpg', 'Kenangan 3')" class="group relative aspect-[4/3] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer">
+          <img src="./images/galeri/kenangan3.jpg" alt="Kenangan 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+            <span class="text-xs font-semibold text-zinc-200">Kenangan 3</span>
+          </div>
+        </div>
+
+        <!-- Kenangan 4 -->
+        <div onclick="openModal('./images/galeri/kenangan4.jpg', 'Kenangan 4')" class="group relative aspect-[4/3] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer">
+          <img src="./images/galeri/kenangan4.jpg" alt="Kenangan 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+            <span class="text-xs font-semibold text-zinc-200">Kenangan 4</span>
+          </div>
+        </div>
+
+        <!-- Kenangan 5 -->
+        <div onclick="openModal('./images/galeri/kenangan5.jpg', 'Kenangan 5')" class="group relative aspect-[4/3] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer">
+          <img src="./images/galeri/kenangan5.jpg" alt="Kenangan 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+            <span class="text-xs font-semibold text-zinc-200">Kenangan 5</span>
+          </div>
+        </div>
+
+        <!-- Kenangan 6 -->
+        <div onclick="openModal('./images/galeri/kenangan6.jpg', 'Kenangan 6')" class="group relative aspect-[4/3] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer">
+          <img src="./images/galeri/kenangan6.jpg" alt="Kenangan 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+            <span class="text-xs font-semibold text-zinc-200">Kenangan 6</span>
+          </div>
+        </div>
+
+        <!-- Kenangan 7 -->
+        <div onclick="openModal('./images/galeri/kenangan7.jpg', 'Kenangan 7')" class="group relative aspect-[4/3] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer">
+          <img src="./images/galeri/kenangan7.jpg" alt="Kenangan 7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+            <span class="text-xs font-semibold text-zinc-200">Kenangan 7</span>
+          </div>
+        </div>
+
+        <!-- Kenangan 8 -->
+        <div onclick="openModal('./images/galeri/kenangan8.jpg', 'Kenangan 8')" class="group relative aspect-[4/3] bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 cursor-pointer">
+          <img src="./images/galeri/kenangan8.jpg" alt="Kenangan 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
+            <span class="text-xs font-semibold text-zinc-200">Kenangan 8</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- JADWAL PELAJARAN & PIKET -->
+    <section id="jadwal" class="space-y-8 reveal">
+      <div>
+        <h2 class="font-serif-custom text-3xl md:text-4xl font-bold text-zinc-100">
+          Jadwal <em class="font-serif-custom italic font-normal text-amber-400">Kelas</em>
+        </h2>
+        <p class="text-xs font-semibold text-zinc-400 tracking-widest uppercase mt-1">PELAJARAN & PIKET HARIAN</p>
+      </div>
+
+      <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide" id="day-tabs"></div>
+      <div id="jadwal-content" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-800/80 py-12 text-center text-zinc-400 text-xs">
+    <h3 class="font-serif-custom text-xl font-bold text-zinc-200 mb-2">XI-SEVENTURE</h3>
+    <p>SMA Negeri 1 Gunung Sindur • Official Class Website</p>
+    <div class="mt-3">
+      <a href="https://www.instagram.com/xi_seventure_/" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-amber-400 transition-colors font-semibold">
+        Instagram: @xi_seventure_
+      </a>
+    </div>
+    <p class="mt-3 text-zinc-500">
+      Created by <span class="text-amber-400 font-semibold">Muhamad Fauzhan Abdulah</span>
+    </p>
+  </footer>
+
+  <!-- MODAL LIGHTBOX -->
+  <div id="image-modal" onclick="closeModal()" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex flex-col items-center justify-center p-4 select-none">
+    
+    <!-- Tombol Tutup -->
+    <button onclick="closeModal()" aria-label="Tutup" class="absolute top-5 right-5 z-50 w-10 h-10 rounded-full bg-zinc-900/90 border border-zinc-700 hover:border-amber-400 text-zinc-300 hover:text-amber-400 flex items-center justify-center transition-all">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+
+    <!-- Tombol Geser Kiri -->
+    <button onclick="prevSlide(event)" aria-label="Foto Sebelumnya" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-50 w-11 h-11 rounded-full bg-zinc-900/90 border border-zinc-700 hover:border-amber-400 text-zinc-200 hover:text-amber-400 flex items-center justify-center shadow-xl transition-all hover:scale-105">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+
+    <!-- Kontainer Gambar -->
+    <div onclick="event.stopPropagation()" class="relative max-w-4xl w-full flex flex-col items-center">
+      <img id="modal-img" src="" alt="Full Preview" class="max-h-[75vh] w-auto rounded-2xl border border-zinc-800 shadow-2xl transition-all duration-200">
+      <p id="modal-caption" class="font-serif-custom italic text-zinc-200 mt-4 text-sm sm:text-base text-center"></p>
+      <div class="mt-1.5 text-xs">
+        <span id="modal-counter" class="text-amber-400 font-semibold"></span>
+      </div>
+    </div>
+
+    <!-- Tombol Geser Kanan -->
+    <button onclick="nextSlide(event)" aria-label="Foto Selanjutnya" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-50 w-11 h-11 rounded-full bg-zinc-900/90 border border-zinc-700 hover:border-amber-400 text-zinc-200 hover:text-amber-400 flex items-center justify-center shadow-xl transition-all hover:scale-105">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+    </button>
+
+  </div>
+
+  <!-- MODAL ACAK KELOMPOK SEIMBANG GENDER -->
+  <div id="spin-modal" onclick="closeSpinModal()" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div onclick="event.stopPropagation()" class="bg-zinc-900 border border-zinc-800 rounded-3xl max-w-4xl w-full max-h-[90vh] flex flex-col relative shadow-2xl overflow-hidden">
+      
+      <!-- Header Modal -->
+      <div class="p-6 border-b border-zinc-800 flex items-center justify-between shrink-0">
+        <div>
+          <span class="inline-block px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[10px] font-bold uppercase tracking-widest mb-1">
+            BALANCED GROUP GENERATOR (20 L • 24 P)
+          </span>
+          <h3 class="font-serif-custom text-xl sm:text-2xl font-bold text-zinc-100">
+            Acak <em class="italic font-normal text-amber-400">Kelompok Kelas</em>
+          </h3>
+        </div>
+
+        <button onclick="closeSpinModal()" aria-label="Tutup" class="w-9 h-9 rounded-full bg-zinc-800 hover:bg-zinc-700 text-zinc-400 hover:text-zinc-200 flex items-center justify-center transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Kontrol Input Jumlah Kelompok -->
+      <div class="p-5 sm:p-6 bg-[#09090b]/60 border-b border-zinc-800 shrink-0 space-y-4">
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-end gap-3">
+          <div class="flex-1">
+            <label for="group-count-input" class="block text-[11px] font-bold text-zinc-400 uppercase tracking-wider mb-1.5">
+              Mau Dibagi Jadi Berapa Kelompok? (2 – 22)
+            </label>
+            <input 
+              type="number" 
+              id="group-count-input" 
+              min="2" 
+              max="44" 
+              value="4" 
+              placeholder="Contoh: 4, 6, 8, atau 11"
+              class="w-full bg-zinc-900 border border-zinc-700 focus:border-amber-400 rounded-xl px-4 py-2.5 text-sm font-bold text-zinc-100 focus:outline-none"
+            >
+          </div>
+
+          <button onclick="generateBalancedGroups()" class="px-6 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-amber-500/15 shrink-0">
+            Acak Sekarang
+          </button>
+
+          <button id="copy-groups-btn" onclick="copyGroupsToClipboard()" class="hidden px-4 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-amber-400 border border-amber-500/30 font-bold text-xs transition-all shrink-0 inline-flex items-center justify-center gap-1.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+            Salin Hasil
+          </button>
+        </div>
+
+        <!-- Preset Angka Cepat -->
+        <div class="flex flex-wrap items-center gap-2 text-[11px]">
+          <span class="text-zinc-500 font-semibold">Pilihan Pas (44 Siswa):</span>
+          <button onclick="quickSetGroup(2)" class="px-2.5 py-1 rounded-lg bg-zinc-800/80 hover:bg-amber-500/20 text-zinc-300 hover:text-amber-400 border border-zinc-700/80 transition-colors">2 Klp (22 org)</button>
+          <button onclick="quickSetGroup(4)" class="px-2.5 py-1 rounded-lg bg-zinc-800/80 hover:bg-amber-500/20 text-zinc-300 hover:text-amber-400 border border-zinc-700/80 transition-colors">4 Klp (11 org)</button>
+          <button onclick="quickSetGroup(11)" class="px-2.5 py-1 rounded-lg bg-zinc-800/80 hover:bg-amber-500/20 text-zinc-300 hover:text-amber-400 border border-zinc-700/80 transition-colors">11 Klp (4 org)</button>
+          <button onclick="quickSetGroup(6)" class="px-2.5 py-1 rounded-lg bg-zinc-800/80 hover:bg-amber-500/20 text-zinc-300 hover:text-amber-400 border border-zinc-700/80 transition-colors">6 Klp (7-8 org)</button>
+          <button onclick="quickSetGroup(8)" class="px-2.5 py-1 rounded-lg bg-zinc-800/80 hover:bg-amber-500/20 text-zinc-300 hover:text-amber-400 border border-zinc-700/80 transition-colors">8 Klp (5-6 org)</button>
+        </div>
+
+        <!-- Pesan Peringatan / Info Kesesuaian -->
+        <div id="group-status-alert" class="hidden rounded-xl p-3 text-xs font-medium"></div>
+      </div>
+
+      <!-- Area Hasil Pembagian Kelompok -->
+      <div id="groups-result-container" class="p-6 overflow-y-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 flex-1">
+        <div class="col-span-full text-center py-10 text-zinc-500 text-xs">
+          Masukkan jumlah kelompok di atas lalu klik <span class="text-amber-400 font-bold">Acak Sekarang</span>.<br>
+          Sistem otomatis menyeimbangkan jumlah <strong class="text-zinc-300">Laki-laki (20)</strong> dan <strong class="text-zinc-300">Perempuan (24)</strong> di setiap kelompok.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FLOATING CONTROLS (BACK TO TOP & MUSIC PLAYER) -->
+  <div class="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3">
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()" aria-label="Kembali ke atas" class="hidden w-11 h-11 rounded-full bg-zinc-900/90 border border-zinc-800 hover:border-amber-400 text-amber-400 flex items-center justify-center shadow-lg backdrop-blur-md transition-all hover:-translate-y-0.5">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+    </button>
+
+    <!-- Floating Music Player -->
+    <button id="music-toggle" onclick="toggleMusic()" class="flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-zinc-900/90 border border-zinc-800 hover:border-amber-400/60 text-zinc-200 shadow-xl backdrop-blur-md transition-all">
+      <div id="equalizer" class="equalizer paused">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <span id="music-label" class="text-[11px] font-bold tracking-wider uppercase text-amber-400">Putar Lagu</span>
+    </button>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast-notif" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-5 py-2.5 rounded-full bg-amber-500 text-black font-bold text-xs shadow-xl opacity-0 pointer-events-none transition-all duration-300">
+    Link website berhasil disalin!
+  </div>
+
+  <!-- AUDIO ELEMENT -->
+  <audio id="bg-music" loop preload="none">
+    <source src="./audio/bgm.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
